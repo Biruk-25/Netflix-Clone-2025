@@ -1,0 +1,100 @@
+
+
+/* Header Outer Container */
+.header-outer-container {
+  width: 100%;
+  background-color: #141414;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Main Header Flex Container */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Side Navigation */
+.header-left ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.header-left li {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-left li:hover {
+  color: #e50914;
+}
+
+.header-left img {
+  max-height: 40px;
+  width: auto;
+}
+
+/* Right Side Icons */
+.header-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+.header-right li {
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.header-right li:hover {
+  transform: scale(1.1);
+  color: #e50914;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-left ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .header-right {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-left ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+  }
+
+  .header-left li {
+    font-size: 14px;
+  }
+
+  .header-right {
+    gap: 10px;
+  }
+
+  .header-right li {
+    font-size: 18px;
+  }
+}

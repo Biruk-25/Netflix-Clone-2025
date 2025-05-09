@@ -1,0 +1,79 @@
+/* Footer Outer Container */
+/* Footer Wrapper */
+.footer-outer-container {
+  background-color: #141414;
+  color: #b3b3b3;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+/* Inner Content Layout */
+.footer-inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Social Icons */
+.footr-icon {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  color: #b3b3b3;
+}
+
+.footr-icon svg {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footr-icon svg:hover {
+  color: #e50914;
+}
+
+/* Footer Link Sections */
+.footer-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.footer-data ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-data li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-data li:hover {
+  color: #ffffff;
+}
+
+/* Service Code */
+.service-code p {
+  border: 1px solid #666;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-code p:hover {
+  background-color: #333;
+}
+
+/* Copyright */
+.copy-write {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+  color: #666;
+}
