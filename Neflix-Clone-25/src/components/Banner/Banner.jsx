@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
-import axios from '../../Utils/axios'; // Your axios instance
-import requests from '../../Utils/requests'; // Your TMDb API endpoint constants
+import axios from '../../Utils/axios';
+import requests from '../../Utils/requests'; 
 import './Banner.css';
 
 
