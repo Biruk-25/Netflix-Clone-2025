@@ -1,18 +1,6 @@
-// import axios from "axios";
-
-// // Create a custom instance of axios for TMDb
-// let tmdb = axios.create({
-//   baseURL: "https://api.themoviedb.org/3",
-//   params: {
-//     api_key: "api_key", // Replace with your actual TMDb API key
-//   },
-// });
-
-// export default tmdb;
-
 import axios from 'axios';
 
-const API_KEY = "VITE_TMDB_API_KEY"; // Ideally, use environment variables
+const API_KEY = "VITE_TMDB_API_KEY";
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 const axiosInstance = axios.create({
@@ -24,4 +12,7 @@ const axiosInstance = axios.create({
 });
 
 export default axiosInstance;
+
+
+
 

@@ -1,7 +1,7 @@
 
 
 import Row from '../Row/Row';
-import Requests from '../../../utils/requests'; // ✅ adjust path as needed
+import Requests from '../../../Utils/requests'; 
 
 function RowList() {
   return (
@@ -15,6 +15,7 @@ function RowList() {
       <Row title="Romance Movies" fetchUrl={Requests.fetchRomanceMovies} isLargeRow/>
       <Row title="Documentaries" fetchUrl={Requests.fetchDocumentaries} isLargeRow/>
       <Row title="Popular TV Shows" fetchUrl={Requests.fetchTVShow} isLargeRow/>
+
     </>
   );
 }
@@ -31,19 +32,3 @@ export default RowList;
 
 
 
-
-
-// import Row from '../Row/Row'
-
-// function RowList() {
-//   return (
-//     <>
-//         <Row
-//         title="NETFLIX ORIGINALS"
-//         fetchUrl={Requests.fetchNetflixOriginal}
-//         />
-//     </>
-//   )
-// }
-
-// export default RowList;

@@ -1,6 +1,6 @@
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
-import axiosInstance from './axios'; // Adjust the import path as needed
+// import axiosInstance from './axios'; 
 
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,

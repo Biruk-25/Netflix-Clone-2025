@@ -15,12 +15,12 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
   useEffect(() => {
     (async () => {
       try {
-        console.log(fetchUrl);
+        // console.log(fetchUrl);
         const request = await axios.get(fetchUrl);
-        console.log(request);
+        // console.log(request);
         setMovies(request.data.results);
       } catch (error) {
-        console.log('error', error);
+        // console.log('error', error);
       }
     })();
   }, [fetchUrl]);
@@ -59,7 +59,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
                 />
             ))}
         </div>
-        YOUTUBE VIDEO
+        {/* YOUTUBE VIDEO */}
         {trailerUrl && (
   <div className="trailer-container">
     <button className="close-button" onClick={() => setTrailerUrl('')}>
